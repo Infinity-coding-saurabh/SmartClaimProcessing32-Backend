@@ -2,7 +2,6 @@ package com.claimprocessing.fraudDetectionService;
 
 import ai.onnxruntime.OnnxTensor;
 import ai.onnxruntime.OrtEnvironment;
-import ai.onnxruntime.OrtException;
 import ai.onnxruntime.OrtSession;
 
 import org.springframework.boot.SpringApplication;
@@ -18,8 +17,9 @@ import java.util.Map;
 public class FraudDetectionServiceApplication {
 
 	public static void main(String[] args) throws Exception {
-
 		SpringApplication.run(FraudDetectionServiceApplication.class, args);
 
 	}
+
+
 }
