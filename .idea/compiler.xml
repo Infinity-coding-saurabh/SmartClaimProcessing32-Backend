@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apigateway" />
+        <module name="eurekaservice" />
       </profile>
       <profile name="Annotation profile for ClaimProcessingService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -26,6 +27,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="claimprocessingservice" options="-parameters" />
       <module name="claimservice" options="-parameters" />
+      <module name="eurekaservice" options="-parameters" />
       <module name="fraudDetectionService" options="-parameters" />
       <module name="ocrservice" options="-parameters" />
     </option>
