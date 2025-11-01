@@ -25,7 +25,6 @@ public class Claim {
     private LocalDate submissionDate;
     private String diagnosis;
     private BigDecimal claimAmount;
-    private Object claimReceipt;
     private LocalDate createdDate;
     private String status;
 }

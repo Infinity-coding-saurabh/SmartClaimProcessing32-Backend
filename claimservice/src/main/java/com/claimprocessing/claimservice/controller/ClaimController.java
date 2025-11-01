@@ -20,7 +20,7 @@ public class ClaimController {
     }
 
     @PostMapping("/submit")
-    public ResponseEntity<ClaimResponseDTO> submitClaim(@Valid @RequestBody ClaimRequestDTO claimRequest,
+    public ResponseEntity<ClaimResponseDTO> submitClaim(@Valid @RequestPart("claimRequest") ClaimRequestDTO claimRequest,
                                                         @RequestPart("file") MultipartFile file) {
         //save claim data
         ClaimResponseDTO response = claimService.submitClaim(claimRequest);
